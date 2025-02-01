@@ -1,0 +1,38 @@
+.Search {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.Search input {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.Search input:first-child {
+  max-width: 600px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.Search input:last-child:hover {
+  cursor: pointer;
+}
+
+.Search label {
+  font-size: 25px;
+}
+
+@media (max-width: 576px) {
+  .Search input:first-child {
+    max-width: 225px;
+  }
+
+  .Search input {
+    font-size: 15px;
+  }
+
+  .Search label {
+    font-size: 13px;
+  }
+}

@@ -1,13 +1,46 @@
-.App-header {
-  margin: 30px;
-}
-.App-logo {
-  max-width: 200px;
-  display: block;
-  margin: 0 auto;
+:root {
+  --primary-light: #dea8e6;
+  --primary-dark: #8ac9ce;
 }
 
-.App-footer {
+.App {
+  color: var(--primary-light);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 0px;
+}
+
+.App a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.App footer {
+  margin: 30px 0px;
   text-align: center;
-  margin: 30px 0;
+}
+
+.App h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 70px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: -1px 1px rgb(182, 182, 182);
+  color: var(--primary-dark);
+}
+
+.App main {
+  max-width: 800px;
+  margin: 70px auto;
+  background-color: #220229;
+  padding: 20px 20px 40px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-light);
+}
+
+@media (max-width: 576px) {
+  .App h1 {
+    font-size: 50px;
+  }
 }

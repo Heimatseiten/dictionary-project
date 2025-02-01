@@ -1,21 +1,26 @@
-import Logo from "./Logo.svg";
 import "./App.css";
-import Dictionary from "./Dictionary";
+import Search from "./Search.js";
+
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <header className="App-header">
-          <img src={Logo} className="App-logo img-fluid" alt="logo" />
-        </header>
-        <main>
-          <Dictionary />
-        </main>
-        <footer className="App-footer">
-          <small>Coded by Tine @ webelle</small>
-        </footer>
-      </div>
+      <main>
+        <h1>Dictionary</h1>
+        <Search />
+      </main>
+      <footer>
+        {" "}
+        <a
+          href="https://github.com/Heimatseiten/dictionary-project"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open Source Code
+        </a>{" "}
+        by Tine Lüttgen
+      </footer>
     </div>
   );
 }
+
 export default App;

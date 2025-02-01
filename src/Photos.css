@@ -1,0 +1,32 @@
+.Photos {
+  padding-top: 50px;
+  max-width: 790px;
+  margin: auto;
+}
+
+.Photos img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  transition: 200ms all ease-in-out;
+}
+
+.Photos img:hover {
+  transform: scale(1.5);
+}
+
+.Photos section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .Photos section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Photos img:hover {
+    transform: none;
+  }
+}

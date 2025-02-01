@@ -1,0 +1,30 @@
+.Meaning {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.Meaning h3 {
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+  color: var(--primary-dark);
+}
+
+.Meaning p {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.Meaning p em {
+  opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  .Meaning h3 {
+    font-size: 20px;
+  }
+
+  .Meaning p {
+    font-size: 15px;
+  }
+}

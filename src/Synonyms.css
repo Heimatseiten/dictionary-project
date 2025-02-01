@@ -1,0 +1,22 @@
+.Synonyms li {
+  display: inline;
+}
+
+.Synonyms li:first-child {
+  color: var(--primary-dark);
+}
+
+.Synonyms li:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.Synonyms ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+@media (max-width: 576px) {
+  .Synonyms {
+    font-size: 15px;
+  }
+}
